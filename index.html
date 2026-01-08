@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catronics Lab | Ingeniería en Sistemas Embebidos e IoT</title>
+    <meta name="description" content="Catronics Lab: Laboratorio tecnológico especializado en sistemas embebidos, IoT, automatización industrial y soluciones de ingeniería electrónica innovadoras.">
+    <meta name="keywords" content="sistemas embebidos, IoT, automatización industrial, ingeniería electrónica, innovación tecnológica, PLC, robótica, microcontroladores">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <nav>
+            <div class="logo" onclick="scrollToTop()">CATRONICS LAB</div>
+            <div class="menu-toggle" id="menuToggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio" onclick="closeMenu()">Inicio</a></li>
+                <li><a href="#servicios" onclick="closeMenu()">Servicios</a></li>
+                <li><a href="#nosotros" onclick="closeMenu()">Quiénes Somos</a></li>
+                <li><a href="#proyectos" onclick="closeMenu()">Proyectos</a></li>
+                <li><a href="#faq" onclick="closeMenu()">FAQ</a></li>
+                <li><a href="#contacto" onclick="closeMenu()">Contacto</a></li>
+            </ul>
+            <button class="cta-btn" onclick="scrollToContact()">Solicitar Cotización</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-bg">
+            <div class="circuit-pattern"></div>
+            <div class="floating-elements">
+                <div class="floating-chip chip1"></div>
+                <div class="floating-chip chip2"></div>
+                <div class="floating-chip chip3"></div>
+                <div class="floating-chip chip4"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <h1>Ingeniería en Sistemas Embebidos para un Futuro Inteligente</h1>
+            <p>Convertimos ideas complejas en soluciones tecnológicas reales: IoT, robótica, automatización industrial, monitoreo inteligente y más.</p>
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="scrollToContact()">Hablar con un Ingeniero</button>
+                <button class="btn-secondary" onclick="document.getElementById('servicios').scrollIntoView({behavior: 'smooth'})">Ver Servicios</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <div class="stats">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-number" data-target="50">0</div>
+                <div class="stat-label">Proyectos Completados</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="30">0</div>
+                <div class="stat-label">Clientes Satisfechos</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="10">0</div>
+                <div class="stat-label">Años de Experiencia</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="99">0</div>
+                <div class="stat-label">% Satisfacción</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <section id="servicios">
+        <h2 class="section-title fade-in">Nuestros Servicios</h2>
+        <p class="section-subtitle fade-in">Soluciones tecnológicas de vanguardia para potenciar tu industria</p>
+        <div class="services-grid">
+            <div class="service-card fade-in">
+                <div class="service-icon">⚡</div>
+                <h3>Desarrollo de Sistemas Embebidos</h3>
+                <p>Microcontroladores, firmware, drivers, diseño de PCB y protocolos de comunicación para soluciones de alto rendimiento.</p>
+                <span class="learn-more">Más información →</span>
+            </div>
+            <div class="service-card fade-in">
+                <div class="service-icon">🌐</div>
+                <h3>Internet de las Cosas (IoT)</h3>
+                <p>Dashboards interactivos, monitoreo industrial en tiempo real, mantenimiento predictivo inteligente y telemetría avanzada.</p>
+                <span class="learn-more">Más información →</span>
+            </div>
+            <div class="service-card fade-in">
+                <div class="service-icon">🏭</div>
+                <h3>Automatización Industrial</h3>
+                <p>Integración de PLC, desarrollo de HMI, sistemas de sensores industriales y trazabilidad completa de procesos.</p>
+                <span class="learn-more">Más información →</span>
+            </div>
+            <div class="service-card fade-in">
+                <div class="service-icon">🔧</div>
+                <h3>Prototipado Electrónico</h3>
+                <p>Diseño y desarrollo de prototipos, impresión 3D, integración de componentes y validación funcional completa.</p>
+                <span class="learn-more">Más información →</span>
+            </div>
+            <div class="service-card fade-in">
+                <div class="service-icon">💻</div>
+                <h3>Diseño Web y Soluciones Digitales</h3>
+                <p>Sitios web corporativos, sistemas a medida, plataformas digitales y bots automatizados para tu negocio.</p>
+                <span class="learn-more">Más información →</span>
+            </div>
+            <div class="service-card fade-in">
+                <div class="service-icon">🤖</div>
+                <h3>Inteligencia Artificial Aplicada</h3>
+                <p>Modelos de visión artificial, analítica avanzada de datos y automatización comercial con IA.</p>
+                <span class="learn-more">Más información →</span>
+            </div>
+        </div>
+
+        <!-- Technologies -->
+        <div class="tech-stack fade-in">
+            <h3 style="text-align: center; font-size: 2rem; margin-bottom: 1rem; color: var(--primary);">Tecnologías que Dominamos</h3>
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <div class="tech-item-icon">🔌</div>
+                    <div class="tech-item-name">Arduino</div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-item-icon">📡</div>
+                    <div class="tech-item-name">ESP32</div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-item-icon">🍓</div>
+                    <div class="tech-item-name">Raspberry Pi</div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-item-icon">⚙️</div>
+                    <div class="tech-item-name">STM32</div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-item-icon">🐍</div>
+                    <div class="tech-item-name">Python</div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-item-icon">💾</div>
+                    <div class="tech-item-name">C/C++</div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-item-icon">📊</div>
+                    <div class="tech-item-name">Node-RED</div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-item-icon">☁️</div>
+                    <div class="tech-item-name">AWS IoT</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="nosotros">
+        <h2 class="section-title fade-in">Quiénes Somos</h2>
+        <div class="about-content">
+            <div class="about-text fade-in">
+                <p>Somos <strong>Catronics Lab</strong>, un laboratorio tecnológico creado por jóvenes ingenieros especializados en Sistemas Embebidos y Automatización Inteligente.</p>
+                <p>Nuestro ADN combina innovación, velocidad y soluciones a nivel industrial. Transformamos procesos con hardware, software y visión estratégica.</p>
+                <p>Trabajamos junto a empresas de todos los tamaños, desde startups hasta industrias consolidadas, brindando soluciones tecnológicas que marcan la diferencia.</p>
+            </div>
+            <div class="about-image fade-in">
+                🔬
+            </div>
+        </div>
+
+        <!-- Values -->
+        <h3 style="text-align: center; font-size: 2rem; margin-top: 4rem; margin-bottom: 2rem; color: var(--primary);" class="fade-in">Nuestros Valores</h3>
+        <div class="values-grid">
+            <div class="value-card fade-in">
+                <div class="value-icon">💡</div>
+                <h4>Innovación</h4>
+                <p>Buscamos constantemente nuevas soluciones y tecnologías para resolver problemas complejos.</p>
+            </div>
+            <div class="value-card fade-in">
+                <div class="value-icon">🎯</div>
+                <h4>Precisión</h4>
+                <p>Cada proyecto es ejecutado con atención al detalle y estándares de calidad superiores.</p>
+            </div>
+            <div class="value-card fade-in">
+                <div class="value-icon">⚡</div>
+                <h4>Agilidad</h4>
+                <p>Entregamos soluciones rápidas sin comprometer la calidad ni la funcionalidad.</p>
+            </div>
+            <div class="value-card fade-in">
+                <div class="value-icon">🤝</div>
+                <h4>Compromiso</h4>
+                <p>Tu éxito es nuestro éxito. Trabajamos contigo hasta lograr los resultados esperados.</p>
+            </div>
+        </div>
+
+        <!-- Mission & Vision -->
+        <div class="mv-grid">
+            <div class="mv-card fade-in">
+                <h3>Misión</h3>
+                <p>Desarrollar soluciones tecnológicas de alto desempeño que potencien la industria, optimicen procesos y acerquen la innovación a empresas de todos los niveles.</p>
+            </div>
+            <div class="mv-card fade-in">
+                <h3>Visión</h3>
+                <p>Convertirnos en el laboratorio líder en ingeniería embebida en Latinoamérica, impulsando la transformación digital con herramientas inteligentes, escalables y accesibles.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section id="proceso">
+        <h2 class="section-title fade-in">Nuestro Proceso de Trabajo</h2>
+        <p class="section-subtitle fade-in">Un método probado para garantizar el éxito de tu proyecto</p>
+        <div class="process-timeline">
+            <div class="process-step fade-in">
+                <div class="step-content">
+                    <h4>Análisis y Consultoría</h4>
+                    <p>Entendemos tus necesidades, evaluamos el alcance del proyecto y diseñamos la mejor estrategia tecnológica.</p>
+                </div>
+                <div class="step-number">1</div>
+                <div></div>
+            </div>
+            <div class="process-step fade-in">
+                <div></div>
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h4>Diseño y Prototipado</h4>
+                    <p>Creamos esquemas, diseñamos circuitos, desarrollamos firmware y construimos el primer prototipo funcional.</p>
+                </div>
+            </div>
+            <div class="process-step fade-in">
+                <div class="step-content">
+                    <h4>Desarrollo e Integración</h4>
+                    <p>Implementamos la solución completa, integramos todos los componentes y realizamos pruebas exhaustivas.</p>
+                </div>
+                <div class="step-number">3</div>
+                <div></div>
+            </div>
+            <div class="process-step fade-in">
+                <div></div>
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h4>Entrega y Soporte</h4>
+                    <p>Desplegamos la solución, capacitamos a tu equipo y brindamos soporte técnico continuo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="proyectos">
+        <h2 class="section-title fade-in">Proyectos Destacados</h2>
+        <p class="section-subtitle fade-in">Innovación aplicada a casos reales</p>
+        <div class="projects-grid">
+            <div class="project-card fade-in">
+                <div class="project-image">🌡️</div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="project-tag">IoT</span>
+                        <span class="project-tag">PLC</span>
+                        <span class="project-tag">Monitoreo</span>
+                    </div>
+                    <h3>Sistema de Monitoreo Industrial</h3>
+                    <p>Plataforma IoT integrada con PLC para monitoreo de temperatura en tiempo real con alertas automatizadas y dashboard analítico.</p>
+                </div>
+            </div>
+            <div class="project-card fade-in">
+                <div class="project-image">🤖</div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="project-tag">Robótica</span>
+                        <span class="project-tag">Educación</span>
+                    </div>
+                    <h3>Robótica Educativa</h3>
+                    <p>Desarrollo de kits de robótica y prototipado para instituciones educativas con módulos personalizados y material didáctico.</p>
+                </div>
+            </div>
+            <div class="project-card fade-in">
+                <div class="project-image">⚙️</div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="project-tag">Embebidos</span>
+                        <span class="project-tag">Custom</span>
+                    </div>
+                    <h3>Sistemas Embebidos Personalizados</h3>
+                    <p>Soluciones a medida con microcontroladores para aplicaciones industriales específicas de alto rendimiento y confiabilidad.</p>
+                </div>
+            </div>
+            <div class="project-card fade-in">
+                <div class="project-image">🏭</div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="project-tag">Automatización</span>
+                        <span class="project-tag">Industrial</span>
+                    </div>
+                    <h3>Automatización de Manufactura</h3>
+                    <p>Sistema completo de automatización para optimización de líneas de producción con trazabilidad total y control de calidad.</p>
+                </div>
+            </div>
+            <div class="project-card fade-in">
+                <div class="project-image">💬</div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="project-tag">IA</span>
+                        <span class="project-tag">Chatbots</span>
+                    </div>
+                    <h3>Bots Inteligentes para Negocios</h3>
+                    <p>Desarrollo de chatbots y sistemas automatizados para atención al cliente 24/7 y gestión comercial eficiente.</p>
+                </div>
+            </div>
+            <div class="project-card fade-in">
+                <div class="project-image">👁️</div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="project-tag">Visión</span>
+                        <span class="project-tag">Control</span>
+                    </div>
+                    <h3>Visión Artificial Industrial</h3>
+                    <p>Implementación de sistemas de visión para control de calidad y detección de defectos en tiempo real con IA.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <h2 class="section-title fade-in">Lo Que Dicen Nuestros Clientes</h2>
+        <p class="section-subtitle fade-in">Experiencias reales de quienes confían en nosotros</p>
+        <div class="testimonials-slider fade-in">
+            <div class="testimonial-card">
+                <p class="testimonial-text">"Catronics Lab transformó por completo nuestra línea de producción. Su sistema de automatización incrementó nuestra eficiencia en un 40% y redujo errores significativamente."</p>
+                <div class="testimonial-author">Ing. Carlos Mendoza</div>
+                <div class="testimonial-role">Director de Operaciones - Industrias del Norte</div>
+            </div>
+        </div>
+        
+        <h3 style="text-align: center; font-size: 2rem; margin-top: 5rem; margin-bottom: 2rem; color: var(--primary);" class="fade-in">Empresas que Confían en Nosotros</h3>
+        <div class="clients-grid">
+            <div class="client-logo fade-in">Cliente 1</div>
+            <div class="client-logo fade-in">Cliente 2</div>
+            <div class="client-logo fade-in">Cliente 3</div>
+            <div class="client-logo fade-in">Cliente 4</div>
+            <div class="client-logo fade-in">Cliente 5</div>
+            <div class="client-logo fade-in">Cliente 6</div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+        <h2 class="section-title fade-in">Preguntas Frecuentes</h2>
+        <p class="section-subtitle fade-in">Resolvemos tus dudas más comunes</p>
+        <div class="faq-container">
+            <div class="faq-item fade-in" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    <span>¿Qué tipo de proyectos pueden desarrollar?</span>
+                    <span class="faq-icon">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        Desarrollamos soluciones en sistemas embebidos, IoT, automatización industrial, robótica, visión artificial, aplicaciones web y móviles. Desde prototipos hasta soluciones industriales completas.
+                    </div>
+                </div>
+            </div>
+            <div class="faq-item fade-in" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    <span>¿Cuánto tiempo toma desarrollar un proyecto?</span>
+                    <span class="faq-icon">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        El tiempo varía según la complejidad. Un prototipo simple puede tomar 2-4 semanas, mientras que sistemas industriales completos pueden requerir 2-6 meses. Siempre entregamos un cronograma detallado.
+                    </div>
+                </div>
+            </div>
+            <div class="faq-item fade-in" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    <span>¿Ofrecen soporte post-implementación?</span>
+                    <span class="faq-icon">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        Sí, ofrecemos garantía, mantenimiento preventivo, actualizaciones y soporte técnico continuo. Nuestro compromiso va más allá de la entrega del proyecto.
+                    </div>
+                </div>
+            </div>
+            <div class="faq-item fade-in" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    <span>¿Trabajan con empresas de cualquier tamaño?</span>
+                    <span class="faq-icon">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        Absolutamente. Trabajamos desde startups y emprendedores hasta grandes empresas industriales. Adaptamos nuestras soluciones a tu presupuesto y necesidades específicas.
+                    </div>
+                </div>
+            </div>
+            <div class="faq-item fade-in" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    <span>¿Cómo puedo solicitar una cotización?</span>
+                    <span class="faq-icon">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        Puedes llenar el formulario de contacto en esta página, escribirnos por WhatsApp o enviarnos un email. Respondemos en menos de 24 horas con una propuesta personalizada.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <div class="cta-banner fade-in">
+        <h2>¿Listo para Transformar tu Industria?</h2>
+        <p>Hablemos de tu proyecto y llevémoslo al siguiente nivel con tecnología de vanguardia</p>
+        <button class="btn-primary" onclick="scrollToContact()">Agenda una Consulta Gratuita</button>
+    </div>
+
+    <!-- Contact -->
+    <section id="contacto">
+        <h2 class="section-title fade-in">Contacto</h2>
+        <p class="section-subtitle fade-in">Cuéntanos sobre tu proyecto y llevémoslo al siguiente nivel</p>
+        <div class="contact-wrapper">
+            <div class="contact-info fade-in">
+                <h3>Información de Contacto</h3>
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <div class="contact-details">
+                        <h4>Email</h4>
+                        <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="13707c7d677270677c53707267617c7d7a70607f72713d707c7e">[email&#160;protected]</a></p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📱</div>
+                    <div class="contact-details">
+                        <h4>Teléfono / WhatsApp</h4>
+                        <p>+52 55 1234 5678</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div class="contact-details">
+                        <h4>Ubicación</h4>
+                        <p>Ecatepec de Morelos, México</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">⏰</div>
+                    <div class="contact-details">
+                        <h4>Horario</h4>
+                        <p>Lun - Vie: 9:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+                <h4 style="margin-top: 2rem; margin-bottom: 1rem; color: var(--light);">Síguenos</h4>
+                <div class="social-links">
+                    <div class="social-link" title="Facebook">📘</div>
+                    <div class="social-link" title="LinkedIn">💼</div>
+                    <div class="social-link" title="Instagram">📷</div>
+                    <div class="social-link" title="YouTube">📹</div>
+                </div>
+            </div>
+            <form class="contact-form fade-in" id="contactForm" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo *</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Ej: Juan Pérez">
+                </div>
+                <div class="form-group">
+                    <label for="empresa">Empresa *</label>
+                    <input type="text" id="empresa" name="empresa" required placeholder="Ej: Industrias XYZ">
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono *</label>
+                    <input type="tel" id="telefono" name="telefono" required placeholder="Ej: +52 55 1234 5678">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required placeholder="tu@empresa.com">
+                </div>
+                <div class="form-group">
+                    <label for="servicio">Servicio de Interés *</label>
+                    <select id="servicio" name="servicio" required>
+                        <option value="">Selecciona un servicio</option>
+                        <option value="sistemas-embebidos">Sistemas Embebidos</option>
+                        <option value="iot">Internet de las Cosas (IoT)</option>
+                        <option value="automatizacion">Automatización Industrial</option>
+                        <option value="prototipado">Prototipado Electrónico</option>
+                        <option value="web">Diseño Web y Soluciones Digitales</option>
+                        <option value="ia">Inteligencia Artificial</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="proyecto">Describe tu Proyecto *</label>
+                    <textarea id="proyecto" name="proyecto" required placeholder="Cuéntanos qué necesitas..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn" id="submitBtn">Agendar una Llamada</button>
+                <div id="formMessage"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">CATRONICS LAB</div>
+                <p>Laboratorio de ingeniería tecnológica especializado en sistemas embebidos, IoT y automatización industrial.</p>
+                <p style="margin-top: 1rem;">Transformamos ideas en realidad tecnológica.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Servicios</h4>
+                <a href="#servicios">Sistemas Embebidos</a>
+                <a href="#servicios">Internet de las Cosas</a>
+                <a href="#servicios">Automatización Industrial</a>
+                <a href="#servicios">Prototipado Electrónico</a>
+                <a href="#servicios">Inteligencia Artificial</a>
+            </div>
+            <div class="footer-section">
+                <h4>Empresa</h4>
+                <a href="#nosotros">Quiénes Somos</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#faq">Preguntas Frecuentes</a>
+                <a href="#contacto">Contacto</a>
+                <a href="#">Blog (Próximamente)</a>
+            </div>
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <p>📧 <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="187b77766c797b6c77587b796c6a7776717b6b74797a367b7775">[email&#160;protected]</a></p>
+                <p>📱 +52 999 737 2022</p>
+                <p>📍 México</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Catronics Lab. Todos los derechos reservados.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.85rem;">Diseñado con ⚡ y 💻 por Catronics Lab</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+</body>
+</html>
