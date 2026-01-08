@@ -1,3 +1,4 @@
+
 /* ====================================
    CATRONICS LAB - CSS STYLESHEET
    Tecnológico, limpio y con toques neón
@@ -60,7 +61,7 @@ html {
 body {
     font-family: var(--font-main);
     background-color: var(--dark);
-    color: var(--white);
+    color: var(--purple);
     line-height: 1.6;
     overflow-x: hidden;
 }
